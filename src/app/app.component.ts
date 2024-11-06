@@ -8,11 +8,12 @@ import { MetricsComponent } from "./metrics/metrics.component";
 import { ProgramationComponent } from "./programation/programation.component";
 import { ContactsComponent } from "./contacts/contacts.component";
 import { BirthdayComponent } from "./birthday/birthday.component";
+import { PerritoComponent } from "./perrito/perrito.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, HomeComponent, FormsComponent, HandbookComponent, MetricsComponent, ProgramationComponent, ContactsComponent, BirthdayComponent],
+  imports: [RouterOutlet, CommonModule, HomeComponent, FormsComponent, HandbookComponent, MetricsComponent, ProgramationComponent, ContactsComponent, BirthdayComponent, PerritoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

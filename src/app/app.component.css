@@ -1,1 +1,238 @@
-.cartoon div,.main,.toper{box-sizing:border-box}.toper{overflow-x:hidden;height:0%;margin:0 auto;padding:1%;width:100%;background-color:#00234b;text-shadow:1px 1px 5px #fff}.main{background:#12507dd5;background:linear-gradient(#12507dd5,#12507dd5);border-radius:20px;width:90vw;height:80vh;min-height:80vh;min-width:90vw;margin:2vh auto 0;overflow:auto;box-shadow:10px 10px 5px #00234b}::view-transition-old(root){animation:2s forwards salida}::view-transition-new(root){animation:3s forwards entrada}.salida{animation:1s forwards salida}.entrada{animation:1.2s forwards entrada}@keyframes entrada{0%{opacity:0;transform:translateX(50px)}100%{opacity:1;transform:translateX(0)}}@keyframes salida{0%{opacity:1;transform:translateX(0)}100%{opacity:0;transform:translateX(-50px)}}.floating-menu{position:fixed;top:18%;left:0;display:flex;flex-direction:column;gap:5px;z-index:10}#desc,.cartoon,.cartoon div,.eye::after{position:absolute}.menu-button{margin-left:5vw;background-color:#0c416d;border:none;color:#fff;padding:15px;text-align:left;font-size:16px;cursor:pointer;border-radius:0 5px 5px 0;overflow:hidden;width:50px;white-space:nowrap;opacity:.5;transition:width .8s,transform .9s;box-shadow:5px 5px 5px #00234b}.menu-button:hover{width:auto;transform:translateX(5px);opacity:1}.button-label{margin-left:20px;opacity:0;transition:opacity 1s}.menu-button:hover .button-label{opacity:1}.contenido-menu{align-items:end;width:80vw;height:80vh;max-width:90vw;max-height:90vh}#desc,.autor{width:0;overflow:hidden}@keyframes border-glow{0%,100%{box-shadow:3px 3px 5px rgba(255,255,255,.5);opacity:1}50%{box-shadow:3px 3px 15PX rgba(255,255,255,.8);opacity:1}}.menu-button.active{border:1px solid #fff;animation:1.5s ease-in-out infinite border-glow;border-radius:5px}.autor{font-weight:700;font-size:.9rem;display:inline-block;font-family:monospace;white-space:nowrap;border-right:1px solid gold;background:linear-gradient(90deg,#b88e26,#fe0,#b88e26);background-size:200%;-webkit-background-clip:text;color:transparent;animation:8s steps(36,end) infinite typing,.5s step-end infinite blink,1s ease-in-out infinite shine}@keyframes typing{0%{width:0}100%,25%{width:36ch}}@keyframes blink{50%{border-color:transparent}}@keyframes shine{0%{background-position:0}100%{background-position:200%}}#desc{height:0;left:-1000in}.cartoon{top:45%;left:45%;transform:translate(-50%,-50%);width:60vmin;height:60vmin}.b{border:.5vmin solid}.r{border-radius:100%}.ha::after,.hb::before{content:"";display:block;position:absolute;box-sizing:border-box}body,html{overflow:hidden;background:#ca55}.nose{background:var(--nose);width:17%;height:12%;transform:rotate(25deg);top:50%;left:1%}.mouth,.mouth::before{background:var(--skin)}.mouth{width:60%;height:30%;top:50%;left:5%;transform:rotate(10deg)}.mouth::before{width:70%;height:90%;border-radius:50%;transform:rotate(-30deg);right:-13%;top:-3%}.eye,.eye::after{background:var(--light)}.mouth::after{width:70%;height:60%;border-radius:50%;border:.5vmin solid transparent;border-left-width:.125vmin;border-right-width:1vmin;border-bottom:.5vmin solid var(--nose);right:0;top:15%;transform:rotate(-20deg)}.eye{width:20%;height:40%;top:20%;left:18%;box-shadow:12vmin 1vmin 0 2vmin var(--light),0 0 0 3vmin var(--fur),12vmin 1vmin 0 5vmin var(--fur),1vmin 0 .5vmin 3vmin #0003,19vmin 3vmin 0 2vmin var(--fur),12vmin .5vmin .5vmin 5vmin #0003}.eye::after{content:"";width:1.5vmin;height:1.5vmin;border-radius:50%;top:40%;left:55%;box-shadow:-1vmin 1vmin 0 2vmin var(--nose),14vmin 0 var(--light),13vmin 1vmin 0 2vmin var(--nose);transform:translate(-50%,-50%);transition:transform .1s;transform:translate(-50%,-50%) translate(var(--pupil-move-x,0),var(--pupil-move-y,0))}.head{width:80%;height:80%;background:var(--fur);left:15%}.ear{width:40%;height:75%;background:#f007;border-radius:100%/120% 120% 80% 80%;top:5%;left:63%;background:var(--fur);box-shadow:inset 0 0 0 15in #0004;transform:rotate(-12deg)}.ear-back{transform:scaleX(-1) rotate(-5deg);left:10%}.body{width:80%;height:40%;top:75%;left:30%;background:var(--fur);transform:rotate(3deg);border-radius:40%/100%;box-shadow:inset -3vmin 4vmin var(--fur),inset -2vmin -2vmin var(--skin)}@keyframes wagTail{0%,100%{transform:rotate(0)}50%{transform:rotate(20deg)}}.body::after{width:40%;height:80%;border-radius:50%;right:-15%;top:-40%;box-shadow:inset -2vmin -1vmin var(--fur);transform-origin:bottom center}.cartoon:hover .body::after{animation:.2s infinite wagTail}.body::before{width:27%;height:25%;background:var(--skin);bottom:5%;left:5.5%;border-radius:100% 100% 0}.leg,.leg::after{background:var(--fur);box-shadow:22vmin 0 var(--fur)}.leg{width:18%;height:30%;left:55%;top:100%}.leg::after{width:125%;height:25%;right:0;bottom:0;border-radius:10vmin 0 0}.leg-back,.leg-back::after{box-shadow:25vmin 0 #0004,25vmin 0 var(--fur)}.leg-back{width:17%;left:32%}.cartoon{--nose:#222;--light:#eee;--skin:#ca5;--fur:#654;transform:scale(.3);transform-origin:bottom right;translate:22vw -13vh}
+.toper {
+    overflow-x: hidden;
+    /* Esto debería ayudar a evitar el desbordamiento horizontal */
+    height: 0%;
+    margin: 0 auto;
+    /* Esto centra el div horizontalmente */
+    padding: 1%;
+    /* Opcional, para agregar espacio interno */
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #00234b;
+    text-shadow: 1px 1px 5px #fff;
+}
+
+.main {
+    background: #12507dd5;
+    background: linear-gradient(#12507dd5, #12507dd5);
+    border-radius: 20px;
+
+
+
+    width: 90vw;
+    /* 85% del ancho de la ventana */
+    height: 80vh;
+    /* 75% de la altura de la ventana */
+    min-height: 80vh;
+    /* Asegura que siempre tenga al menos esta altura */
+    min-width: 90vw;
+    /* Asegura que siempre tenga al menos este ancho */
+    box-sizing: border-box;
+    /* Asegura que el padding y el border se incluyan en el tamaño total */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+    margin-top: 2vh;
+    overflow: auto;
+    /* Añade scroll si el contenido excede la altura */
+
+    box-shadow: 10px 10px 5px #00234b;
+}
+
+::view-transition-old(root) {
+    animation: salida 2s ease 0s 1 normal forwards;
+}
+
+::view-transition-new(root) {
+    animation: entrada 3s ease 0s 1 normal forwards;
+}
+
+.salida {
+    animation: salida 1s ease 0s 1 normal forwards;
+}
+
+.entrada {
+    animation: entrada 1.2s ease 0s 1 normal forwards;
+}
+
+@keyframes entrada {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes salida {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+}
+
+
+
+
+
+/* PRUEBAAAAAAAAAAA */
+/* Contenedor del menú flotante */
+.floating-menu {
+    position: fixed;
+    top: 18%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 10;
+}
+
+/* Estilo de los botones */
+.menu-button {
+    margin-left: 5vw;
+    background-color: #0c416d;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    overflow: hidden;
+    width: 50px;
+    /* Ancho inicial para que se vea solo el ícono */
+    white-space: nowrap;
+    opacity: 0.5;
+    transition: width 0.8s ease, transform 0.9s ease;
+    /* Animación suave */
+    box-shadow: 5px 5px 5px #00234b;
+}
+
+/* Efecto de despliegue */
+.menu-button:hover {
+    width: auto;
+    /* Ancho al hacer hover, ajusta según tus preferencias */
+    transform: translateX(5px);
+    /* Mueve un poco hacia la derecha */
+    opacity: 1;
+}
+
+/* Ocultar el texto por defecto */
+.button-label {
+    margin-left: 20px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+/* Mostrar el texto al hacer hover */
+.menu-button:hover .button-label {
+    opacity: 1;
+}
+
+/* contenedor del contenido dependiendo el menu */
+.contenido-menu {
+    align-items: end;
+    width: 80vw;
+    height: 80vh;
+    max-width: 90vw;
+    max-height: 90vh;
+
+}
+
+/* Efecto de borde brillante */
+@keyframes border-glow {
+    0% {
+        box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5);
+        opacity: 1;
+    }
+
+    50% {
+        box-shadow: 3px 3px 15PX rgba(255, 255, 255, 0.8);
+        opacity: 1;
+    }
+
+    100% {
+        box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5);
+        opacity: 1;
+    }
+}
+
+.menu-button.active {
+    border: 1px solid white;
+    animation: border-glow 1.5s ease-in-out infinite;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Efecto de brillo dorado y máquina de escribir */
+.autor {
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: inline-block;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid gold;
+    /* Puntero dorado */
+    width: 0;
+    background: linear-gradient(90deg, rgb(184, 142, 38), rgb(255, 238, 0), rgb(184, 142, 38));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: typing 8s steps(36, end) infinite, blink .5s step-end infinite, shine 1s ease-in-out infinite;
+}
+
+/* Efecto máquina de escribir */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    25% {
+        width: 36ch;
+    }
+
+    /* Completa la escritura en el 25% del tiempo total */
+    100% {
+        width: 36ch;
+    }
+
+    /* Mantiene el ancho hasta el final del ciclo */
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Efecto de brillo */
+@keyframes shine {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 200%;
+    }
+}
+
