@@ -216,12 +216,9 @@ body {
     box-shadow: 25vmin 0 #0004, 25vmin 0 var(--fur);
 }
 
-
-
-
 .cartoon {
     transform: scale(0.3);
     /* Ajusta el valor para el tamaño deseado */
     transform-origin: bottom right;
-    translate: 18vw -13vh;
+    translate: -30vw -58vh;
 }

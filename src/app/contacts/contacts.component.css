@@ -1,4 +1,44 @@
 h1 {
     font-size: 40px;
     text-shadow: 3px 3px 2px #00234b;  
+    padding-bottom: 5vh;
+}
+
+.table{
+    background-color: #0c416d70;
+    color: rgba(255, 255, 255, 0.596);
+    font-size: x-small;
+    border-radius: 20px;
+    font-weight: normal;
+}
+
+.table tr:hover{
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #fff;
+}
+
+table thead{
+    color: #fff;
+    font-size: large;
+}
+
+/* PRUEBA */
+table {
+    border: 2px solid #ffffff81;
+    border-collapse: separate; /* Cambiar a 'separate' para que funcione el border-radius */
+    border-radius: 10px; /* Ajusta el valor para mayor o menor redondeo */
+    overflow: hidden; /* Asegura que las esquinas no sobresalgan */
+    box-shadow: 15px 15px 5px #00234b;
+}
+
+th, td {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555;
+    padding: 10px;
+}
+
+thead th {
+    background-color: #06325ca6;
+    color: white;
 }

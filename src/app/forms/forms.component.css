@@ -1,13 +1,15 @@
 h1 {
     font-size: 40px;
     text-shadow: 3px 3px 2px #00234b;  
+    padding-bottom: 15vh;
 }
 button {
     background-color: #06325ca6;
     border: none;
     color: white;
     padding: 15px;
-    text-align: left;
+    margin: 15px;
+    text-align: center;
     font-size: 12px;
     cursor: pointer;
     border-radius: 5px;
@@ -15,7 +17,7 @@ button {
     box-shadow: 5px 5px 5px #00234b;
     white-space: nowrap;
     opacity: 1;
-    width: auto; /* El ancho debe ajustarse al contenido */
+    width: 250px; /* El ancho debe ajustarse al contenido */
     animation: none; /* No aplicar animación por defecto */
     transition: opacity 0.3s ease; /* Transición de opacidad */
 }

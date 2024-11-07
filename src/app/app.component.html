@@ -47,7 +47,7 @@
 
 
   <!-- Aquí puedes renderizar el contenido de cada sección en base a la lógica de Angular -->
-  <div class="container contenido-menu" [ngClass]="{'salida': isExiting, 'entrada': !isExiting}">
+  <div class="container contenido-menu scrollbar" [ngClass]="{'salida': isExiting, 'entrada': !isExiting}">
     <ng-container *ngIf="currentSection === 'inicio' ">
       <app-home></app-home>
     </ng-container>
@@ -74,11 +74,9 @@
 </div>
 
 
-
-<div>
+<div class="floating-perrito">
   <app-perrito></app-perrito>
 </div>
-
 
 
 
